@@ -23,21 +23,31 @@ extern rgblight_config_t rgblight_config;
 
 enum layers {
     DEFAULT,
+    MEET,
     ZOOM,
-    ADJUST
+    ADJUST,
+    RGBMODE
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [DEFAULT] = LAYOUT(
-        MO(ZOOM), KC__VOLUP,   LGUI(KC_D),
-        KC__MUTE, KC__VOLDOWN, LGUI(KC_E)
+        LT(ADJUST,KC__MUTE),    KC__VOLDOWN, KC__VOLUP,
+        MO(MEET),               KC_BRMD,     KC_BRMU
+    ),
+    [MEET] = LAYOUT(
+        MO(ZOOM), _______,   _______,
+        _______,  LGUI(KC_D),LGUI(KC_E)
     ),
     [ZOOM] = LAYOUT(
-        _______,    _______,  SGUI(KC_A),
-        MO(ADJUST), _______,  SGUI(KC_V)
+        _______, _______,    _______,
+        _______, SGUI(KC_A), SGUI(KC_V)
     ),
     [ADJUST] = LAYOUT(
-        _______, RGB_VAI, RGB_TOG,
-        _______, RGB_VAD, RGB_MODE_FORWARD
+        _______,        RGB_HUD, RGB_HUI,
+        MO(RGBMODE),    RGB_VAD, RGB_VAI
+    ),
+    [RGBMODE] = LAYOUT(
+        _______, RGB_MODE_FORWARD,  RGB_MODE_RAINBOW,
+        _______, RGB_MODE_GRADIENT, RGB_TOG
     )
 };
