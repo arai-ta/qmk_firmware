@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 			LT(FUNCTION,KC_BSPC),KC_LALT,KC_LGUI,KC_LGUI, KC_LANG2,KC_ENT,  KC_SPC,   LT(CURSOR,KC_BSPC),KC_ENT,KC_LANG1,KC_SPC,  KC_RGUI, KC_RALT, KC_PGDN, KC_PGUP
   ),
   [CURSOR] = LAYOUT(
-			KC_F1,   LGUI(KC_UP), KC_F2, KC_F3, KC_F4,   KC_F5,  KC_F6,             KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_NO,   _______,
+			_______, LGUI(KC_UP), KC_NO, KC_NO, LGUI(KC_RIGHT), KC_NO, KC_NO,       KC_NO,   KC_NO,   KC_NO,   KC_NO,   LGUI(KC_LEFT), KC_NO, KC_NO, KC_NO, KC_NO,
 			_______, KC_NO,   LALT(KC_RGHT), KC_NO, KC_NO, KC_NO, KC_NO,            KC_NO,   KC_PGUP, LGUI(KC_NUHS),LGUI(KC_RBRC), KC_NO,  KC_NO,   KC_NO,   _______,
 			_______, KC_NO,   KC_NO,   KC_PGDN, KC_NO,   LGUI(KC_DOWN), KC_NO,      KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT,  KC_NO, KC_NO,   KC_NO,
 			_______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_VOLD, KC_VOLU, KC_NO,   KC_NO,   _______,
