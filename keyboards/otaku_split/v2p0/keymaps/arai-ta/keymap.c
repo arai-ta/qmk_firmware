@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [CURSOR] = LAYOUT(
 			_______, LGUI(KC_UP), KC_NO, KC_NO, LGUI(KC_RIGHT), KC_NO, KC_NO,       KC_NO,   KC_NO,   KC_NO,   KC_NO,   LGUI(KC_LEFT), KC_NO, KC_NO, KC_NO, KC_NO,
-			_______, KC_NO,   LALT(KC_RGHT), KC_NO, KC_NO, KC_NO, KC_NO,            KC_NO,   KC_PGUP, LGUI(KC_NUHS),LGUI(KC_RBRC), KC_NO,  KC_NO,   KC_NO,   _______,
+			_______, KC_NO,   LALT(KC_RGHT), LALT(KC_LEFT), KC_NO, KC_NO, KC_NO,    KC_NO,   KC_PGUP, LGUI(KC_NUHS),LGUI(KC_RBRC), KC_NO,  KC_NO,   KC_NO,   _______,
 			_______, KC_NO,   KC_NO,   KC_PGDN, KC_NO,   LGUI(KC_DOWN), KC_NO,      KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT,  KC_NO, KC_NO,   KC_NO,
 			_______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_VOLD, KC_VOLU, KC_NO,   KC_NO,   _______,
 			_______, _______, _______, _______, _______, _______, _______,          _______, _______, _______, _______, _______, _______, _______, _______
