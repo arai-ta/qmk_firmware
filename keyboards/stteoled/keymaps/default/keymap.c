@@ -14,6 +14,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include QMK_KEYBOARD_H
+#include "lufa.h"
+#include "ssd1306.h"
 
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
@@ -32,6 +34,30 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_A,    KC_1,    QMKBEST
     )
 };
+
+// initialize
+void matrix_init_user(void) {
+    iota_gfx_init(false);
+}
+
+// entry -> (iota_gfx_task) -> iota_gfx_task_user
+void matrix_scan_user(void) {
+    iota_gfx_task();
+}
+
+void matrix_update(struct CharacterMatrix *dest, const struct CharacterMatrix *source) {
+    if (memcmp(dest->display, source->display, sizeof(dest->display))) {
+        memcpy(dest->display, source->display, sizeof(dest->display));
+        dest->dirty = true;
+    }
+}
+
+void iota_gfx_task_user(void) {
+    struct CharacterMatrix matrix;
+    matrix_clear(&matrix);
+    matrix_write_P(&matrix, PSTR("Hello World!"));
+    matrix_update(&display, &matrix);
+}
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
