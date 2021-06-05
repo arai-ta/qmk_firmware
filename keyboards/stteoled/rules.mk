@@ -21,6 +21,5 @@ RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 AUDIO_ENABLE = no           # Audio output
 
-COMMON_PATH += keyboards/helix
 SRC = i2c.c
 SRC += ssd1306.c
