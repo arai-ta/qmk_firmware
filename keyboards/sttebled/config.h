@@ -40,8 +40,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { D0, D5 }
-#define MATRIX_COL_PINS { F1, F0, B0 }
+#define MATRIX_ROW_PINS { B3, B2 }
+#define MATRIX_COL_PINS { B4, B5 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
@@ -58,9 +58,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define LED_COMPOSE_PIN B3
 //#define LED_KANA_PIN B4
 
-//#define BACKLIGHT_PIN B7
-//#define BACKLIGHT_LEVELS 3
-//#define BACKLIGHT_BREATHING
+#define BACKLIGHT_PIN B6
+#define BACKLIGHT_LEVELS 7
+#define BACKLIGHT_BREATHING
+#define BREATHING_PERIOD 4
 
 //#define RGB_DI_PIN E2
 //#ifdef RGB_DI_PIN
