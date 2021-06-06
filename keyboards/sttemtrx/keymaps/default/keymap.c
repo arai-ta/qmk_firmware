@@ -23,14 +23,16 @@ enum layer_names {
 // Defines the keycodes used by our macros in process_record_user
 enum custom_keycodes {
     QMKBEST = SAFE_RANGE,
-    QMKURL
+    QMKURL,
+    ARAINAME
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-        KC_A, KC_B,
-        KC_C, KC_D
+        KC_A, KC_B, KC_C,
+        KC_1, KC_2, KC_3,
+        QMKBEST, QMKURL, ARAINAME
     )
 };
 
@@ -50,6 +52,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 SEND_STRING("https://qmk.fm/\n");
             } else {
                 // when keycode QMKURL is released
+            }
+            break;
+        case ARAINAME:
+            if (record->event.pressed) {
+                // when keycode QMKURL is pressed
+            } else {
+                // when keycode QMKURL is released
+                SEND_STRING("ARAI Takashi\n");
             }
             break;
     }
