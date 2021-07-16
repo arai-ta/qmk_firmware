@@ -4,7 +4,7 @@
 
 *A short description of the keyboard/project*
 
-* Keyboard Maintainer: [ARAI Takashi](https://github.com/yourusername)
+* Keyboard Maintainer: [ARAI Takashi](https://github.com/arai-ta)
 * Hardware Supported: *The PCBs, controllers supported*
 * Hardware Availability: *Links to where you can find this hardware*
 
