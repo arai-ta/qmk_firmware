@@ -18,8 +18,8 @@
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
     _BASE,
-    /*
     CURSOR,
+    /*
     SYMBOL,
     META
     */
@@ -38,7 +38,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_ENTER,
         KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_RSHIFT,
         XXXXXXX,XXXXXXX,XXXXXXX,
-                                KC_LGUI,KC_SPC, KC_BSPC,KC_RCTL,
+                            KC_LGUI, KC_SPC, LT(CURSOR,KC_BSPC), KC_RCTL,
+                                                                XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX
+    ),
+    [CURSOR] = LAYOUT(
+        KC_ESC, LALT(KC_RGHT), LALT(KC_LEFT), KC_NO,   KC_NO,   KC_NO,   KC_PGUP, LGUI(KC_NUHS),LGUI(KC_RBRC), KC_NO,   KC_NO,
+        KC_TAB, KC_NO,  KC_PGDN,KC_NO,  LGUI(KC_DOWN),  KC_LEFT,KC_DOWN,KC_UP,  KC_RIGHT,  KC_SCLN,KC_ENTER,
+        KC_LSHIFT,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_LANG1,  KC_NO,  KC_VOLD,KC_VOLU,KC_NO,  KC_RSHIFT,
+        XXXXXXX,XXXXXXX,XXXXXXX,
+                                _______,_______,_______,_______,
                                                                 XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX
     )
 };
