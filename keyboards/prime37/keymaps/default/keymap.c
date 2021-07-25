@@ -34,9 +34,9 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-        KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,   KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_MINUS,
-        KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_ENTER,
-        KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_RSHIFT,
+        KC_Q,   KC_W,   BL_INC,   KC_R,   KC_T,   KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_MINUS,
+        KC_A,   KC_S,   KC_D,   BL_DEC,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_ENTER,
+        KC_Z,   KC_X,   KC_C,   KC_V,   BL_TOGG,   KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_RSHIFT,
         XXXXXXX,XXXXXXX,XXXXXXX,
                        KC_LGUI, LT(SYMBOL,KC_SPC), LT(CURSOR,KC_BSPC), KC_RCTL,
                                                                 XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX
