@@ -58,7 +58,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define LED_COMPOSE_PIN B3
 //#define LED_KANA_PIN B4
 
-#define BACKLIGHT_PIN D7
+#define BACKLIGHT_PIN B2
 #define BACKLIGHT_LEVELS 7
 #define BACKLIGHT_BREATHING
 
