@@ -41,7 +41,7 @@ LSFT_T(KC_Z),   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,KC_DOT, 
     [CURSOR] = LAYOUT(
         KC_ESC, LALT(KC_RGHT), LALT(KC_LEFT), KC_NO,   KC_NO,   KC_NO,   KC_PGUP, LGUI(KC_RBRACKET),LGUI(KC_LBRACKET), KC_NO,   KC_NO,
         KC_TAB, KC_NO,  KC_PGDN,KC_NO,  LGUI(KC_DOWN),  KC_LEFT,KC_DOWN,KC_UP,  KC_RIGHT,  KC_SCLN,KC_ENTER,
-        KC_LSFT,KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_LANG1,  KC_NO,  BL_DEC,BL_INC,BL_TOGG,  KC_RSHIFT,
+        KC_LSFT,KC_NO,  KC_NO,  KC_NO,  KC_LANG2,  KC_LANG1,  BL_BRTG,BL_DEC,BL_INC,BL_TOGG,  KC_RSHIFT,
         XXXXXXX,XXXXXXX,XXXXXXX,
                                 _______,_______,_______,_______,
                                                                 XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX
