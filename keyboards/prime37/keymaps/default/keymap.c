@@ -44,15 +44,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [CURSOR] = LAYOUT(
         KC_ESC, LALT(KC_RGHT), LALT(KC_LEFT), KC_NO,   KC_NO,   KC_NO,   KC_PGUP, LGUI(KC_NUHS),LGUI(KC_RBRC), KC_NO,   KC_NO,
         KC_TAB, KC_NO,  KC_PGDN,KC_NO,  LGUI(KC_DOWN),  KC_LEFT,KC_DOWN,KC_UP,  KC_RIGHT,  KC_SCLN,KC_ENTER,
-        KC_LSHIFT,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_LANG1,  KC_NO,  KC_VOLD,KC_VOLU,KC_NO,  KC_RSHIFT,
+        KC_LSFT,KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_LANG1,  KC_NO,  KC_VOLD,KC_VOLU,KC_NO,  KC_RSHIFT,
         XXXXXXX,XXXXXXX,XXXXXXX,
                                 _______,_______,_______,_______,
                                                                 XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX
     ),
     [SYMBOL] = LAYOUT(
         KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   KC_LBRACKET,
-        KC_EXLM,KC_AT,  KC_HASH,KC_DLR, KC_PERC,KC_CIRC,KC_AMPR,KC_ASTR,KC_LPRN,KC_RPRN,KC_RBRACKET,
-        KC_Z,   KC_X,   KC_C,   KC_V,   KC_GRV, KC_TILD,KC_EQL, KC_PLUS,KC_BSLS,KC_PIPE,KC_QUOTE,
+        _______,_______,_______,_______,_______,_______,KC_GRV, KC_MINS,KC_EQL, KC_BSLS,KC_RBRACKET,
+        KC_LSFT,_______,_______,_______,_______,_______,_______,_______,_______,_______,KC_QUOTE,
         XXXXXXX,XXXXXXX,XXXXXXX,
                                 _______,_______,_______,_______,
                                                                 XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX
