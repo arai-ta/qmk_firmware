@@ -31,15 +31,15 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-        KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,   KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_MINUS,
-LCTL_T(KC_A),   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,RSFT_T(KC_BSPC),
-LSFT_T(KC_Z),   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_ENTER,
+ LSFT_T(KC_Q),  KC_W,   KC_E,   KC_R,   KC_T,   KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_MINUS,
+        KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_ENTER,
+        KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_RSHIFT,
         XXXXXXX,XXXXXXX,XXXXXXX,
-                       KC_LGUI, KC_LCTL, LT(CURSOR,KC_SPC), MO(SYMBOL),
+                       KC_LGUI, MO(SYMBOL),LT(CURSOR,KC_SPC),KC_LCTL,
                                                                 XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX
     ),
     [CURSOR] = LAYOUT(
-        KC_ESC, LALT(KC_RGHT), LALT(KC_LEFT), KC_NO,   KC_NO,   KC_NO,   KC_PGUP, LGUI(KC_RBRACKET),LGUI(KC_LBRACKET), KC_NO,   KC_NO,
+        KC_ESC, LALT(KC_RGHT), LALT(KC_LEFT), KC_NO,   KC_NO,   KC_NO,   KC_PGUP, LGUI(KC_RBRACKET),LGUI(KC_LBRACKET), KC_NO,   KC_BSPC,
         KC_TAB, KC_NO,  KC_PGDN,KC_NO,  LGUI(KC_DOWN),  KC_LEFT,KC_DOWN,KC_UP,  KC_RIGHT,  KC_SCLN,_______,
         KC_LSFT,KC_NO,  KC_NO,  KC_NO,  KC_LANG2,  KC_LANG1,  BL_BRTG,BL_DEC,BL_INC,BL_TOGG,  _______,
         XXXXXXX,XXXXXXX,XXXXXXX,
@@ -49,7 +49,7 @@ LSFT_T(KC_Z),   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,KC_DOT, 
     [SYMBOL] = LAYOUT(
         KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   KC_LBRACKET,
         _______,_______,_______,_______,_______,_______,KC_GRV, KC_MINS,KC_EQL, KC_BSLS,KC_RBRACKET,
-        KC_LSFT,_______,_______,_______,_______,_______,_______,_______,_______,_______,KC_QUOTE,
+        KC_LSFT,_______,_______,_______,KC_LANG2,_______,_______,_______,_______,_______,KC_QUOTE,
         XXXXXXX,XXXXXXX,XXXXXXX,
                                 _______,_______,_______,_______,
                                                                 XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX
