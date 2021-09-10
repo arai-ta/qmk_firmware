@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_ENTER,
         KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_RSHIFT,
         XXXXXXX,XXXXXXX,XXXXXXX,
-                       KC_LGUI, MO(SYMBOL),LT(CURSOR,KC_SPC),KC_LCTL,
+                       KC_LGUI,LT(SYMBOL,KC_SPC),MO(CURSOR),LCTL_T(KC_BSPC),
                                                                 XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX
     ),
     [CURSOR] = LAYOUT(
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [SYMBOL] = LAYOUT(
         KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   KC_LBRACKET,
         _______,_______,_______,_______,_______,_______,KC_GRV, KC_MINS,KC_EQL, KC_BSLS,KC_RBRACKET,
-        KC_LSFT,_______,_______,_______,KC_LANG2,_______,_______,_______,_______,_______,KC_QUOTE,
+        KC_LSFT,_______,_______,_______,KC_LANG2,KC_LANG1,_______,_______,_______,_______,KC_QUOTE,
         XXXXXXX,XXXXXXX,XXXXXXX,
                                 _______,_______,_______,_______,
                                                                 XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX
